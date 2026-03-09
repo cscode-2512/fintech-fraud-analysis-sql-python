@@ -154,27 +154,28 @@ Some key insights identified from the analysis:
 ---
 
 # 📁 Repository Structure
+
+```
 fintech-fraud-analysis
 │
 ├── data
-│ └── digital_payment_transactions_cleaned.csv
+│   └── digital_payment_transactions.csv
 │
 ├── python
-│ └── data_cleaning_eda.ipynb
+│   └── cleaning_payment_data.ipynb
 │
 ├── sql
-│ └── fraud_analysis_queries.sql
+│   └── fraud_analysis.sql
 │
 ├── images
-│ ├── data_quality_check.png
-│ ├── overall_fraud_rate.png
-│ ├── fraud_by_transaction_type.png
-│ ├── fraud_by_device.png
-│ └── monthly_fraud_trend.png
+│   ├── data_quality_check.png
+│   ├── overall_fraud_rate.png
+│   ├── fraud_by_transaction_type.png
+│   ├── fraud_by_device.png
+│   └── monthly_fraud_trend.png
 │
 └── README.md
-
-
+```
 
 ---
 
