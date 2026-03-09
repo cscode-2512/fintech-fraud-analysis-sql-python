@@ -5,9 +5,8 @@
 | Metric | Value |
 |------|------|
 | Dataset Size | 300,000 Transactions |
-| Fraud Records | ~3% |
+| Fraud Transactions | 2,265 |
 | Tools Used | Python, MySQL |
-| Analysis Type | Fraud Pattern Detection |
 | Queries Written | 15+ Analytical Queries |
 
 ## 📌 Project Overview
@@ -20,7 +19,6 @@ The objective of this project is to perform **end-to-end data analysis** to:
 
 - Clean and validate raw transaction data
 - Identify fraud patterns across different transaction channels
-- Analyze behavioral characteristics associated with fraud
 - Detect high-risk segments across devices, locations, and merchant categories
 - Measure fraud exposure through analytical SQL queries
 
@@ -127,17 +125,28 @@ Time-based fraud analysis to observe fraud patterns across different months.
 
 Beyond the examples shown above, additional analytical queries were performed to understand fraud behavior in greater depth:
 
-- Fraud rate by **merchant category**
-- Fraud analysis by **transaction amount ranges**
-- Fraud patterns by **city and location**
-- Identification of **users with repeated fraudulent transactions**
-- Detection of **high-risk user accounts**
-- Calculation of **total fraud exposure by transaction value**
-- Multi-dimensional fraud analysis across **city, device type, and transaction type**
-- Ranking segments with the **highest fraud probability**
+### 1️⃣ Fraud Rate by Merchant Category
+Analyzed fraud distribution across different merchant industries to identify which business categories experience higher fraud exposure.
 
-These analyses help uncover **behavioral and structural patterns associated with fraudulent transactions**.
+### 2️⃣ Fraud Risk by Transaction Amount Segment
+Transactions were segmented into **Low, Medium, and High value groups** to determine whether fraud is more common in specific transaction value ranges.
 
+### 3️⃣ Monthly Fraud Trend Analysis
+Time-based fraud analysis was performed to track fraud activity across months and identify temporal patterns in fraudulent transactions.
+
+### 4️⃣ Users faced Multiple Fraud Attempts
+Identified users who experienced **multiple fraudulent transactions**, helping detect potential repeat fraud targeting or compromised accounts.
+
+### 5️⃣ City and Device Fraud Interaction
+Performed a **multi-dimensional analysis combining city and device type** to detect high-risk combinations where fraud occurs more frequently.
+
+### 6️⃣ Transaction Types with Above-Average Fraud Rate
+Compared fraud rates across transaction types and identified those with **fraud rates higher than the overall system average**.
+
+### 7️⃣ Fraud in First-Time Transactions
+Analyzed whether fraud occurs during a user's **first transaction**, which may indicate risks associated with new accounts or onboarding fraud.
+
+These analyses provide deeper insights into **behavioral patterns, high-risk segments, and structural vulnerabilities in digital payment systems**.
 ---
 
 # 📌 Key Insights
@@ -145,11 +154,12 @@ These analyses help uncover **behavioral and structural patterns associated with
 Some key insights identified from the analysis:
 
 - Fraud rates vary across **transaction types and payment channels**
+  - 'Wallet' transaction types have highest fraud rate ie 3.33% 
 - Certain **device types show higher fraud activity**
+  -'Web' among the highest with 2.49%
 - Fraud patterns differ across **merchant categories**
-- A small group of users are responsible for **multiple fraudulent attempts**
-- Fraud activity can be monitored using **time-based analysis**
-- High-risk segments can be detected through **multi-dimensional SQL analysis**
+- TOP 3 cities with highest fraud transaction
+  - Chennai= 323 ,Delhi= 313 ,Bangalore=276
 
 ---
 
